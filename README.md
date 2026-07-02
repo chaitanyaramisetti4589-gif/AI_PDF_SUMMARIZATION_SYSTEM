@@ -1,53 +1,79 @@
 # 📄 AI Document Summarization & Email Delivery Automation
 
-An AI-powered document processing workflow built with **n8n** that accepts a PDF through a form, extracts its content, generates a structured summary using AI, and emails the summary to the user automatically.
+An AI-powered document processing workflow built with **n8n** that accepts a PDF through a form, extracts its content, generates a structured summary using AI, and automatically emails the summary to the user.
 
 ---
 
 ## 🚀 Overview
 
-Reading lengthy documents such as meeting minutes, reports, research papers, and resumes can be time-consuming. This automation simplifies the process by generating a concise, well-structured summary and delivering it directly to the user's inbox.
+Reading lengthy documents such as meeting minutes, research papers, reports, contracts, and resumes can be time-consuming. This automation simplifies the process by extracting text from uploaded PDF documents, generating a structured AI-powered summary, and delivering the results directly to the user's inbox.
 
-The entire workflow is fully automated—from PDF upload to email delivery.
+The workflow is fully automated—from PDF upload to email delivery—making document processing faster and more efficient.
 
 ---
 
 ## ✨ Features
 
-- 📤 Upload a PDF through an n8n form
+- 📤 Upload a PDF using an n8n form
 - 📄 Extract text from PDF documents
-- 🤖 Generate an AI-powered summary
-- 📑 Organize the output into:
+- 🤖 Generate an AI-powered structured summary
+- 📑 Organize the summary into:
   - Summary
   - Key Points
   - Important Decisions
   - Action Items
   - Conclusion
 - 📧 Automatically email the summary to the provided email address
-- 📅 Include processing date in the generated report
-- ⚡ End-to-end automated workflow
+- 📅 Include the document name and processing date
+- ⚡ Fully automated end-to-end workflow
 
 ---
 
 ## 🏗️ Workflow Architecture
 
-```
-User Uploads PDF + Email
+```text
+          User
             │
             ▼
-      n8n Form Trigger
+  Upload PDF + Email
             │
             ▼
-     Extract PDF Text
+     n8n Form Trigger
             │
             ▼
-        AI Processing
+    Extract PDF Content
+            │
+            ▼
+      Groq AI (LLM)
             │
             ▼
  Generate Structured Summary
             │
             ▼
-    Send Summary via Email
+    Gmail Email Delivery
+            │
+            ▼
+      User Receives Summary
+```
+
+---
+
+## 📸 Workflow
+
+> Add your workflow screenshot here.
+
+```
+screenshots/workflow.png
+```
+
+---
+
+## 📧 Sample Email Output
+
+> Add your generated email screenshot here.
+
+```
+screenshots/summary-email.png
 ```
 
 ---
@@ -55,7 +81,8 @@ User Uploads PDF + Email
 ## 🛠️ Tech Stack
 
 - **n8n**
-- **Groq AI (Llama Model)**
+- **Groq AI**
+- **Llama 3.3**
 - **PDF Text Extraction**
 - **Gmail**
 - **Git**
@@ -65,7 +92,7 @@ User Uploads PDF + Email
 
 ## 📂 Project Structure
 
-```
+```text
 AI-Document-Summarization-System/
 │
 ├── README.md
@@ -89,26 +116,25 @@ AI-Document-Summarization-System/
 │   └── summary-email.png
 │
 └── assets/
-    └── banner.png
 ```
 
 ---
 
-## 📋 How It Works
+## ⚙️ How It Works
 
-1. User uploads a PDF through the form.
+1. User uploads a PDF document.
 2. User enters an email address.
 3. The workflow extracts text from the uploaded PDF.
 4. The extracted text is sent to the AI model.
 5. The AI generates a structured summary.
 6. The summary is formatted into a professional email.
-7. The email is automatically sent to the user's inbox.
+7. The email is automatically delivered to the user.
 
 ---
 
-## 📧 Sample Email Output
+## 📋 Sample Output
 
-```
+```text
 📄 AI Document Summary
 
 Document:
@@ -120,20 +146,23 @@ Processed On:
 ────────────────────────
 
 Summary
-...
+A concise overview of the document.
 
 Key Points
-• ...
-• ...
+• Point 1
+• Point 2
+• Point 3
 
 Important Decisions
-• ...
+• Decision 1
+• Decision 2
 
 Action Items
-• ...
+• Action 1
+• Action 2
 
 Conclusion
-...
+A brief conclusion.
 
 ────────────────────────
 
@@ -148,73 +177,97 @@ Built with ❤️ using n8n & Groq AI
 
 - Meeting Minutes Summarization
 - Research Paper Summarization
-- Resume Analysis
+- Resume Screening
 - Contract Review
-- Business Report Summarization
-- Academic Notes Summarization
-- Document Processing Automation
+- Business Report Analysis
+- Academic Document Summarization
+- Knowledge Management
+- Document Automation
 
 ---
 
-## 🎯 Skills Demonstrated
+## 📊 Results
+
+- ✅ Automatic PDF upload processing
+- ✅ Accurate text extraction
+- ✅ AI-generated structured summaries
+- ✅ Professional email delivery
+- ✅ End-to-end workflow automation
+- ✅ Reduced manual document review time
+
+---
+
+## 🧠 Skills Demonstrated
 
 - Workflow Automation
 - AI Integration
-- PDF Processing
 - Prompt Engineering
+- PDF Processing
 - Email Automation
-- Business Process Automation
 - API Integration
+- Business Process Automation
 - End-to-End Workflow Design
-
----
-
-## 🔮 Future Enhancements
-
-- OCR support for scanned PDFs
-- Multi-language document summarization
-- Batch PDF processing
-- Support for DOCX and TXT files
-- Save summaries to Google Drive
-- Store summaries in a database
-- Generate downloadable PDF summaries
-- Dashboard for document history
-
----
-
-## 📸 Screenshots
-
-### Workflow
-> Add `screenshots/workflow.png`
-
-### Form Interface
-> Add `screenshots/form.png`
-
-### Generated Email
-> Add `screenshots/summary-email.png`
 
 ---
 
 ## 🚀 Getting Started
 
-### Clone the Repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/AI-Document-Summarization-System.git
+git clone https://github.com/<your-github-username>/AI-Document-Summarization-System.git
 ```
 
-### Import the Workflow
+### 2. Import the Workflow
 
-- Open n8n
+- Open **n8n**
 - Import the workflow JSON from the `workflow/` folder
 - Configure your credentials
 - Execute the workflow
 
 ---
 
+## 🔮 Future Improvements
+
+- OCR support for scanned PDFs
+- Batch PDF processing
+- Multi-language summarization
+- DOCX and TXT support
+- Save summaries to Google Drive
+- Store summaries in a database
+- Download summary as PDF
+- Dashboard for processed documents
+- Processing time analytics
+
+---
+
+## 📸 Screenshots
+
+### Workflow
+
+> `screenshots/workflow.png`
+
+### Form Interface
+
+> `screenshots/form.png`
+
+### Email Output
+
+> `screenshots/summary-email.png`
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome.
+
+Feel free to fork this repository and submit a pull request.
+
+---
+
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
 
@@ -222,9 +275,11 @@ This project is licensed under the MIT License.
 
 **Chaitanya Ramisetty**
 
-- GitHub: https://github.com/<your-username>
-- LinkedIn: https://linkedin.com/in/<your-profile>
+- GitHub: https://github.com/your-github-username
+- LinkedIn: https://linkedin.com/in/your-linkedin-profile
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a star!
+## ⭐ Support
+
+If you found this project useful, consider giving it a **⭐ Star** on GitHub.
