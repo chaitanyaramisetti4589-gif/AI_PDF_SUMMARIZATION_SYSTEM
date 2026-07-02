@@ -245,15 +245,15 @@ git clone https://github.com/<your-github-username>/AI-Document-Summarization-Sy
 
 ### Workflow
 
-> `screenshots/workflow.png`
+> SCREEN SHOTS/workflow.png
 
 ### Form Interface
 
-> `screenshots/form.png`
+> SCREEN SHOTS/form.png
 
 ### Email Output
 
-> `screenshots/summary-email.png`
+> SCREEN SHOTS/email.png
 
 ---
 
@@ -275,8 +275,8 @@ This project is licensed under the **MIT License**.
 
 **Chaitanya Ramisetty**
 
-- GitHub: https://github.com/your-github-username
-- LinkedIn: https://linkedin.com/in/your-linkedin-profile
+- GitHub: https://github.com/chaitanyaramisetti4589-gif
+- LinkedIn: https://linkedin.com/in/Chaitanya-Ramisetti
 
 ---
 
