@@ -1,4 +1,4 @@
-# 📄 AI Document Summarization & Email Delivery Automation
+# 📄 AI Document Summarization & Email Delivery Automation System
 
 An AI-powered document summarization application built with **n8n**, **Groq AI**, and a custom **HTML/CSS/JavaScript frontend**. Users can upload a PDF document, receive an AI-generated summary, and have it delivered directly to their email.
 
