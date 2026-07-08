@@ -22,8 +22,18 @@ The system automatically:
 - Displays the processing status on the website
 
 ---
-## Demo
+
+## 🚀 Live Demo
 https://resplendent-fudge-120f99.netlify.app/
+
+---
+
+## 📸 Preview
+
+
+
+
+---
 
 ## ✨ Features
 
