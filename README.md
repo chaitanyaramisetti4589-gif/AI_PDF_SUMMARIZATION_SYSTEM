@@ -30,8 +30,8 @@ https://resplendent-fudge-120f99.netlify.app/
 
 ## 📸 Preview
 
-
-
+<img width="1297" height="878" alt="Screenshot 2026-07-03 100507" src="https://github.com/user-attachments/assets/04a06c5a-26fd-4dd0-a831-8907424549c9" />
+<img width="1917" height="911" alt="email" src="https://github.com/user-attachments/assets/725b77f2-5b03-43d7-9c3a-979c439927f3" />
 
 ---
 
